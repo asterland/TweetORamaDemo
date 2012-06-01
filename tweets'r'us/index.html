@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tweet'R'Us</title>
+		<script src="jquery-1.7.2.min.js"></script>
+		<script src="handlebars.js"></script>
+		<script src="index.js"></script>
+		<link href="index.css" rel="stylesheet" type="text/css" />
+		<script id="tweet_tmpl" type="text/x-handlebars-template">
+			<div class="tweet">
+				<div class="tweet_text">{{text}}</div>
+					<div class="tweet_footer">
+						<div class="tweet_hours">{{hours}} hours ago</div>
+						<div class="tweet_link">
+						<a class="tweet_link_text" target="_blank" href="http://www.twitter.com/{{user}}/status/{{id}}">[view on twitter]</a>
+					</div>
+				</div>
+			</div>
+		</script>
+	</head>
+	<body>
+		<h1>Tweets'R'Us</h1>
+		<div id="tweet_container"></div>
+	</body>
+</html>

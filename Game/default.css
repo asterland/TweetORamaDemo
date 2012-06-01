@@ -1,0 +1,57 @@
+﻿#bottom {
+    border: 2px solid black;
+    background-color: #808080;
+    width: 96%;
+    margin-left: 5px;
+    background-color: #cdcaca; 
+    font-family: 'Segoe UI';
+    font-weight: 100;
+    font-size: small;
+    padding: 5px;
+}
+
+#bricks {
+    font-size:  xx-large;
+    font-weight: 900;
+    text-align: center;
+}
+#gameCanvas {
+    background-color: #fff;
+    border-width: 10px;
+    border-style: groove;
+    border-color:  black;
+}
+#hits {
+    color: green;
+}
+#total {
+    color: red;
+}
+#total::after {
+    content: '(' attr(data-value) ')';
+    position:  relative;
+    color: blue;         
+}
+#bricksCount {
+    vertical-align: middle;
+    height: 20px;
+    width: 130px;
+}
+#bricksCount::after {
+    content: attr(data-value) "/" attr(max);
+    position:  relative;
+    top: -20px;
+    left: 135px;
+    color: black;
+}
+
+#timer {
+    color: black;
+}
+body {
+    background-color: #ff6a00;
+    width: 100%;
+    height: 100%;
+}
+
+

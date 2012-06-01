@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Paddle</title>
+  
+    <!-- GameTutorials_1 references -->
+    <link href="default.css" rel="stylesheet">
+    <script src="default.js"></script>
+    <script src="myapp.js"></script>
+</head>
+<body>
+    <div id="sizer"></div>
+    <canvas id="gameCanvas"></canvas>
+    <div id="bottom">
+        <div>
+            <div style="font-size: xx-large;text-align: center;">
+                <span id="hits">0</span>
+                <span id="seperator">-</span>
+                <span id="total">0</span>&nbsp;&nbsp;
+                <span id="timer">0</span>
+            </div>
+        </div>
+        <p /><hr />
+        <div>
+            <div style="height: 40px;">
+                <div style="display: inline; width: 200px;float: left;">Number of bricks:</div>
+                <div style="position: relative;">
+                    <input type="range" max="40" min="5" id="bricksCount" value="20"></input></div>
+            </div>
+            <div style="height: 40px;">
+                <div style="display: inline; width: 200px;float: left;">Ball Speed</div>
+                <div style="position: relative; float: left;">
+                    <select id="speed">
+                        <option value="0.5">Slow</option>
+                        <option value="1.0">Normal</option>
+                        <option value="2.0">Fast</option>
+                        <option value="3.5">Super-sonic</option>
+                    </select>
+                </div>
+            </div>
+            <div style="height: 40px;">
+                <div style="display: inline; width: 200px;float: left;">Paddle size</div>
+                <div style="position: relative; float: left;">
+                    <select id="paddle">
+                        <option value="1.0">Small</option>
+                        <option value="2.0">Medium</option>
+                        <option value="3.0">Large</option>
+                    </select>
+                </div>
+            </div>
+            <div style="height: 40px;">
+                <div style="display: inline; width: 200px;float: left;">Ball size</div>
+                <div style="position: relative; float: left;">
+                    <select id="ball">
+                        <option value="1.0">Small</option>
+                        <option value="2.0">Medium</option>
+                        <option value="3.0">Large</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+            <div id="ballspeed">0</div>
+    </div>
+</body>
+</html>
+    

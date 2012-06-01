@@ -1,0 +1,95 @@
+Chrome Inspector Demo Steps
+- Open jsfiddle
+- Hit F12
+- Introduce Chrome Inspector
+- Quick overview of all the tabs 
+- Talk about the window management patern (tabs)
+- Mention console as noteble exception in terms of window management (it's on at the same time)
+- Point out errors in the console (As they will appear) 
+- Introcude each of the tabs as they are common on all the browser tools
+	- Elements (HTML/CSS)
+	- Resources (Point out how they are seperating resources from network)
+	- Network (point out the filters and that it includes web sockets)
+- Console demo
+	- Go to jsfiddle.net
+- Debugging demo
+
+- Profiling demo
+
+Links
+
+
+NodeJS Server
+Code Part 0
+var http = require('http');
+http.createServer(function (req, res) {
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.end("Hello From NodeJs");
+}).listen(1337, "127.0.0.1");
+console.log('Tweet\'R\'Us server running at http://127.0.0.1:1337/');
+
+cmd: node helloFromNode.js
+
+Code Part 1
+Copy large codes from "C:\Users\andster\Documents\Work\V.Next Diagnostics\Demos\dummyData.txt"
+
+Code Part 2
+Add line below http inc.
+var url = require('url');
+
+Code Part 3
+Add lines below 
+    var body = '';
+    var urlObj = url.parse(req.url, true);
+    var callbackFuncName = urlObj.query['callback'];
+    body = callbackFuncName + '(' + dummyTwitterData +');'
+    res.writeHead(200, {'Content-Type': 'application/javascript'});
+    res.end(body)
+
+
+Tweet'r'US client Code
+Code Part 0
+// Stub out html/js
+
+
+Code Part 1
+// Use console.log to see data
+
+Code Part 2
+// add template 
+​
+Code Part 3
+// Add console.time
+        console.time("render tweets");
+
+        console.timeEnd("render tweets");
+
+Code Part 4
+// Add some style
+
+Code Part 5
+
+
+Code Part 
+Go to http://google.com
+Search: convert images to base64
+
+Code Part 
+Go to url below to create base64 data
+http://webcodertools.com/imagetobase64converter/Create
+File: "C:\Users\andster\Documents\Work\V.Next Diagnostics\Demos\tweets'r'us\external_link.gif"
+
+Code Part
+Add css snuppet below to the end
+.tweet_link:hover{
+    background-repeat: no-repeat;
+    background-position: 100% 0; 
+    background-image: url(data:image/gif;base64,R0lGODlhDQALAPcAAFxcXF5eXmJiYmNjY2dnZ2pqamxsbG5ubm9vb3BwcHFxcXNzc3d3d3l5eXp6ent7e3x8fH5+fn9/f4GBgYuLi4yMjOLi4uXl5ezs7O3t7e/v7/Hx8fLy8vPz8/T09PX19fb29vf39/j4+Pn5+fr6+vv7+/z8/P39/f///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAADQALAAAIewBJoEDxYWCJgSg2ILxwAoXADCgGLHigwCCKER5EIIQQYAGKDhMgHKAgAQUGBAoqABjYIMRAgRAgHCyAgoMDFCJCeDhA4INAhAxAmEBhwQDCDgNNRMA5sIMJmiAaomjg0ESJhgkQDoxQEMUJERqyahUwAUECAhIYiB0YEAA7);
+}
+
+Code Part Complete
+go to http://jsfiddle.net/asterland/4VtCe/
+
+
+
+​
